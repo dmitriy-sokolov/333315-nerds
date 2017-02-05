@@ -1,32 +1,32 @@
+/* Шрифты
+*/
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/roboto.woff2') format('woff2'),
-       url('/fonts/roboto.woff') format('woff'),
+  src: url('/fonts/roboto.woff2') format('woff2'), url('/fonts/roboto.woff') format('woff'),
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/robotomedium.woff2') format('woff2'),
-       url('/fonts/robotomedium.woff') format('woff'),
+  src: url('/fonts/robotomedium.woff2') format('woff2'), url('/fonts/robotomedium.woff') format('woff'),
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/robotobold.woff2') format('woff2'),
-       url('/fonts/robotobold.woff') format('woff'),
+  src: url('/fonts/robotobold.woff2') format('woff2'), url('/fonts/robotobold.woff') format('woff'),
 }
 
-.backgroud-container{
-  background-color: #eee;
-}
 
-body{
+/* Основные стили для документа
+ */
+
+body {
   min-width: 1200px;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -35,14 +35,171 @@ body{
   line-height: 18px;
 }
 
-.sliders{
+
+/* Контейнер с фоном
+ */
+
+.backgroud-container {
+  background-color: #eee;
+}
+
+
+/* Используется как центровщик
+*/
+
+.container {
+  display: flex;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Основное меню
+*/
+
+.main-header {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 49px;
+}
+
+.main-navigation {
+  width: 440px;
+}
+
+.main-navigation ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.main-header a {
+  display: inline-block;
+  padding: 7px 0;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border-bottom: 2px solid transparent;
+}
+
+.basket {
+  width: 160px;
+  text-align: right;
+}
+
+.basket>a {
+  position: relative;
+  padding-left: 30px;
+}
+
+.basket>a::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -2px;
+  width: 18px;
+  height: 18px;
+  background: transparent url("../img/sprites.png") no-repeat;
+  background-position: -5px -66px;
+  opacity: 0.3;
+}
+
+.logo a:hover {
+  opacity: 0.8;
+}
+
+.logo a:active {
+  opacity: 0.3;
+}
+
+.main-navigation a:hover, .basket a:hover {
+  color: #fb565a;
+}
+
+.main-navigation a:active, .basket a:active {
+  color: #000;
+  opacity: 0.3;
+}
+
+.main-navigation .active a, .basket.active a {
+  border-bottom: 2px solid #fb565a;
+}
+
+
+/* Работа с кнопками
+*/
+
+.btn {
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-know {
+  padding: 13px 54px 15px 53px;
+}
+
+.btn-error {
+  background-color: #fb565a;
+}
+
+.btn-error:hover {
+  background-color: #e74246;
+}
+
+.btn-error:active {
+  background-color: #d7373b;
+}
+
+.btn-info {
+  background-color: #efc84a;
+}
+
+.btn-info:hover {
+  background-color: #eab534;
+}
+
+.btn-info:active {
+  background-color: #e5a722;
+}
+
+.btn-success {
+  background-color: #00ca74;
+}
+
+.btn-success:hover {
+  background-color: #00bc6c;
+}
+
+.btn-success:active {
+  background-color: #00aa62;
+}
+
+.btn-order {
+  padding: 13px 39px 15px 40px;
+}
+
+.sliders {
   display: flex;
   position: relative;
   height: 413px;
   justify-content: center;
 }
 
-.slider{
+.slider {
   position: absolute;
   top: 0;
   left: 0;
@@ -52,21 +209,21 @@ body{
   background-position: right;
 }
 
-.slider.item1{
+.slider.item1 {
   background-image: url(../img/slide1.png);
 }
 
-.slider.item2{
+.slider.item2 {
   display: none;
   background-image: url(../img/slide2.png);
 }
 
-.slider.item3{
+.slider.item3 {
   display: none;
   background-image: url(../img/slide3.png);
 }
 
-.sliders .switch{
+.sliders .switch {
   display: flex;
   justify-content: space-between;
   width: 88px;
@@ -79,7 +236,7 @@ body{
   bottom: 95px;
 }
 
-.switch li{
+.switch li {
   position: relative;
 }
 
@@ -90,140 +247,50 @@ body{
   margin-bottom: 30px;
 }
 
-.detail-lead{
+.detail-lead {
   margin-bottom: 45px;
 }
 
-.btn{
-  font-size: 16px;
-  line-height: 18px;
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 4px;
-  color:white;
-}
-
-.btn-know{
-  padding: 13px 54px 15px 53px;
-}
-
-.btn-error{
-  color: #fff;
-  background-color: #fb565a;
-}
-
-.btn-info{
-  color: #fff;
-  background-color: #efc84a;
-}
-
-.btn-success{
-  color: #fff;
-  background-color: #00ca74;
-}
-
-.btn-order{
-  padding: 13px 39px 15px 40px;
-}
-
-.main-header{
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 49px;
-}
-
-.container{
-  display: flex;
-  width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main-navigation{
-  width: 440px;
-}
-
-.basket{
-  width: 160px;
-  text-align: right;
-}
-
-.basket>a{
-  position: relative;
-}
-
-.basket>a::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -40px;
-
-  width: 18px;
-  height: 18px;
-
-  background: transparent url("../img/sprites.png") no-repeat;
-  background-position: -5px -66px;
-  opacity: 0.3;
-}
-
-.main-navigation ul{
-  display: flex;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  justify-content: space-between;
-
-  list-style: none;
-
-}
-
-.main-header a{
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-  color:black;
-}
-
-.orders{
+.orders {
   padding-top: 80px;
   padding-bottom: 80px;
   border-bottom: 2px solid #eee;
   justify-content: space-between;
 }
 
-.order{
+.order {
   width: 300px;
 }
 
-.order:last-child{
+.order:last-child {
   margin-right: 60px;
 }
 
-.order b{
+.order b {
   display: block;
   margin: 20px 0;
   text-transform: uppercase;
   font-size: 24px;
 }
 
-.order p{
+.order p {
   margin-bottom: 35px;
 }
-.about{
+
+.about {
   padding-top: 40px;
   justify-content: space-between;
 }
 
-.description{
+.description {
   width: 660px;
 }
 
-.advantages{
+.advantages {
   width: 360px;
 }
 
-.advantages .title{
+.advantages .title {
   margin-top: 40px;
   font-weight: bold;
   text-align: center;
@@ -236,55 +303,71 @@ body{
   margin-right: 15px;
 }
 
-.advantage b{
+.advantage b {
   display: block;
   margin-top: 45px;
   margin-bottom: 25px;
   font-size: 45px;
 }
 
-.advantage p{
+.advantage p {
   display: block;
 }
 
+.advantage sup {
+  top: -8px;
+}
+
+
+/* Работа с партнерами
+*/
+
 .partners {
-    padding-top: 45px;
-    padding-bottom: 33px;
-    margin-bottom: 80px;
-    border-top: 2px solid #eeeeee;
-    border-bottom: 2px solid #eeeeee;
-    text-align: center;
-    font-size: 0;
+  padding-top: 45px;
+  padding-bottom: 33px;
+  margin-bottom: 80px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  text-align: center;
+  font-size: 0;
 }
 
 .partner-logo {
-    width: 280px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-    position: relative;
+  width: 280px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  position: relative;
+  opacity: 0.2;
+}
+
+.partner-logo:hover {
+  opacity: 1;
+}
+
+.partner-logo:active {
+  opacity: 0.1;
 }
 
 .partner-logo:after {
-    content: "";
-    width: 2px;
-    height: 50px;
-    background: #eeeeee;
-    position: absolute;
-    top: 50%;
-    right: -1px;
-    transform: translateY(-50%);
+  content: "";
+  width: 2px;
+  height: 50px;
+  background: #eeeeee;
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  transform: translateY(-50%);
 }
 
 .partner-logo:last-child {
-    margin-right: 0;
-    width: 260px;
+  margin-right: 0;
+  width: 260px;
 }
 
 .partner-logo:last-child:after {
-    display: none;
+  display: none;
 }
-
 
 .main-footer {
   margin-top: 40px;
@@ -299,7 +382,7 @@ body{
   background-position: center;
 }
 
-.feedback{
+.feedback {
   box-sizing: border-box;
   width: 320px;
   margin-top: 54px;
@@ -310,7 +393,7 @@ body{
   font: inherit;
 }
 
-.feedback header{
+.feedback header {
   margin-bottom: 30px;
   color: black;
   font-weight: bold;
@@ -320,17 +403,17 @@ body{
   margin-top: 25px;
 }
 
-.btn-feedback{
+.btn-feedback {
   padding: 17px 45px 17px 45px;
 }
 
-.social{
+.socials {
   width: 260px;
   display: flex;
   justify-content: space-between;
 }
 
-.social > a{
+.socials>a {
   position: relative;
   width: 78px;
   height: 78px;
@@ -339,7 +422,15 @@ body{
   font-size: 0;
 }
 
-.social-vk::after{
+.socials>a:hover {
+  background-color: #e74246;
+}
+
+.socials>a:active {
+  background-color: #d7373b;
+}
+
+.social::after {
   position: absolute;
   content: '';
   left: 25px;
@@ -347,69 +438,63 @@ body{
   width: 26px;
   height: 22px;
   background: transparent url("../img/sprites.png") no-repeat;
+}
+
+.social:active::after {
+  opacity: 0.3;
+}
+
+.social-vk::after {
   background-position: 0 -44px;
 }
 
-.social-fb::after{
-  position: absolute;
-  content: '';
-  left: 25px;
-  top: 28px;
-  width: 26px;
-  height: 22px;
-  background: transparent url("../img/sprites.png") no-repeat;
+.social-fb::after {
   background-position: 0 -22px;
 }
 
-.social-inst::after{
-  position: absolute;
-  content: '';
-  left: 25px;
-  top: 28px;
-  width: 26px;
-  height: 22px;
-  background: transparent url("../img/sprites.png") no-repeat;
+.social-inst::after {
   background-position: 0 0;
 }
 
-.main-footer > .container{
+.main-footer>.container {
   align-items: center;
   margin-top: 70px;
 }
 
-.offer{
+.offer {
   margin-left: 140px;
 }
-.offer b{
+
+.offer b {
   font-size: 36px;
   line-height: 36px;
 }
 
-.offer p{
+.offer p {
   margin-top: 10px;
   margin-bottom: 0;
 }
 
-.description{
+.description {
   margin-top: 40px;
   margin-bottom: 65px;
 }
 
 .description b {
   display: block;
-  margin-bottom:38px;
+  margin-bottom: 38px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
-.description ul{
+.description ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.description ul > li{
+.description ul>li {
   position: relative;
   padding: 14px 0;
   padding-left: 35px;
@@ -431,12 +516,14 @@ body{
   background-color: #fb565a;
 }
 
-.switch .radio-custom-label span{
+.switch .radio-custom-label span {
   font-size: 0;
 }
 
+
 /* Стилизированный radio
 */
+
 .radio-custom-label {
   position: relative;
 }
@@ -468,9 +555,11 @@ input[type="radio"] {
   border: 2px solid #b8b8b8;
 }
 
+
 /*.radio-custom:hover::before {
   border: 4px solid #4d4d4d;
 }*/
+
 
 /*.radio-custom>input[type="radio"]:hover:checked::after {
   background-color: #4d4d4d;
