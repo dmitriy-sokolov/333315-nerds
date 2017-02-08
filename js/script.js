@@ -2,7 +2,7 @@
     var switchers = document.querySelectorAll('.switch input[type="radio"]');
 
     var changeSlide  = function(event){
-      var value = event.srcElement['value'];
+      var value = event.target['value'];
       var sliders = document.querySelectorAll('.slider');
       for(var i=0; i<sliders.length; i++){
         sliders[i].style.display='none';
