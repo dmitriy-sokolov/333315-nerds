@@ -19,7 +19,7 @@
         <ul>
           <li><a href="studio.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
@@ -31,17 +31,17 @@
   <main>
     <div class="backgroud-container">
       <div class="sliders container">
-        <div class="slider item1">
+        <div class="slider">
           <p class="lead"><b>Долго, дорого,<br>скрупулезно.</b></p>
           <p class="detail-lead">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
           <a href="about1.html" class="btn btn-know btn-error">Узнать больше</a>
         </div>
-        <div class="slider item2">
+        <div class="slider">
           <p class="lead"><b>Любим математику<br>как никто другой</b></p>
           <p class="detail-lead">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
           <a href="about2.html" class="btn btn-know btn-error">Узнать больше</a>
         </div>
-        <div class="slider item3">
+        <div class="slider">
           <p class="lead"><b>Только ночь,<br>только хардкор</b></p>
           <p class="detail-lead">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
           <a href="about3.html" class="btn btn-know btn-error">Узнать больше</a>
@@ -49,21 +49,21 @@
         <ul class="switch">
           <li>
             <label class="radio-custom-label">
-                  <input type="radio" name="slider" value="1" checked/>
-                  <span>1</span>
-                </label>
+              <input type="radio" name="slider" value="1" checked/>
+              <span>1</span>
+            </label>
           </li>
           <li>
             <label class="radio-custom-label">
-                  <input type="radio" name="slider" value="2"/>
-                  <span>1</span>
-                </label>
+              <input type="radio" name="slider" value="2"/>
+              <span>1</span>
+            </label>
           </li>
           <li>
             <label class="radio-custom-label">
-                  <input type="radio" name="slider" value="3"/>
-                  <span>1</span>
-                </label>
+              <input type="radio" name="slider" value="3"/>
+              <span>1</span>
+            </label>
           </li>
         </ul>
       </div>
@@ -157,5 +157,23 @@
     </div>
   </footer>
 </body>
+<script type="text/javascript">
+(function(){
+    var switchers = document.querySelectorAll('.switch input[type="radio"]');
+
+    var changeSlide  = function(event){
+      var value = event.srcElement['value'];
+      var sliders = document.querySelectorAll('.slider');
+      for(var i=0; i<sliders.length; i++){
+        sliders[i].style.display='none';
+      }
+      sliders[value-1].style.display='block'
+    }
+
+    for(var i=0; i<switchers.length; i++){
+      switchers[i].addEventListener('click', changeSlide);
+    }
+})();
+</script>
 
 </html>
