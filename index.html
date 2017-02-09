@@ -30,7 +30,7 @@
     <main>
       <div class="backgroud-container">
         <div class="sliders container">
-          <div class="slider">
+          <div class="slider visible">
             <p class="lead"><b>Долго, дорого,<br>скрупулезно.</b></p>
             <p class="detail-lead">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
             <a href="about1.html" class="btn btn-know btn-error">Узнать больше</a>
@@ -49,19 +49,19 @@
             <li>
               <label class="radio-custom-label">
                 <input type="radio" name="slider" value="1" checked/>
-                <span>1</span>
+                <span class="text-hidden">1</span>
               </label>
             </li>
             <li>
               <label class="radio-custom-label">
                 <input type="radio" name="slider" value="2"/>
-                <span>1</span>
+                <span class="text-hidden">2</span>
               </label>
             </li>
             <li>
               <label class="radio-custom-label">
                 <input type="radio" name="slider" value="3"/>
-                <span>1</span>
+                <span class="text-hidden">3</span>
               </label>
             </li>
           </ul>
@@ -162,16 +162,16 @@
         <div class="identity">
           <label>
             Ваше имя:
-            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            <input type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
           </label>
           <label>
             Ваш e-mail:
-            <input type="text" name="email" placeholder="Для отправки ответа">
+            <input type="text" name="email" placeholder="Для отправки ответа" required>
           </label>
         </div>
         <label>
           Текст письма:
-          <textarea name="name" rows="5" placeholder="В свободной форме"></textarea>
+          <textarea name="name" rows="5" placeholder="В свободной форме" required></textarea>
         </label>
         <button class="btn btn-error btn-send" type="submit">Отправить</button>
       </form>
