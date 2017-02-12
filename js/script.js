@@ -24,14 +24,14 @@
     var doShow = function(event){
       event.preventDefault();
       overlay.classList.add("visible");
-      from.classList.add("visible");
+      from.classList.add("show-modal");
       loginField.focus();
     };
 
     var doClose = function(event){
       event.preventDefault();
       overlay.classList.remove("visible");
-      from.classList.remove("visible");
+      from.classList.remove("show-modal");
     };
     feedback.addEventListener("click", doShow)
     closeBtn.addEventListener("click", doClose);
