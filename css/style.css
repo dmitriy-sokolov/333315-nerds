@@ -278,14 +278,14 @@ body {
 
 .lead {
   font-size: 55px;
-  line-height: 55px;
-  margin-top: 58px;
-  margin-bottom: 28px;
+  line-height: 51px;
+  margin-top: 59px;
+  margin-bottom: 23px;
 }
 
 .detail-lead {
-  line-height: 22px;
-  margin-bottom: 42px;
+  line-height: 24px;
+  margin-bottom: 40px;
 }
 
 .orders {
