@@ -34,7 +34,7 @@
       </div>
 
       <div class="main-content container">
-        <form class="filer-goods" action="catalog.html" method="get">
+        <form class="filter-goods" action="catalog.html" method="get">
           <fieldset>
             <legend>Стоимтость:</legend>
             <div class="range-filter">
@@ -46,67 +46,54 @@
                 <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
               </div>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-grid">
             <legend>Сетка:</legend>
             <ul>
-              <li><label>
-                <input type="radio" name="typegrid" value="adaptive">
-                <span>Адаптивная</span>
+              <li>
+                <input id="adaptive" type="radio" name="typegrid" value="adaptive">
+                <label class="radio" for="adaptive">Адаптивная</label>
               </label></li>
               <li>
-                <label>
-                  <input type="radio" name="typegrid" value="fix">
-                  <span>Фиксированная</span>
-                </label>
+                <input id="fix" type="radio" name="typegrid" value="fix">
+                <label class="radio" for="fix">Фиксированная</label>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="typegrid" value="rubber">
-                  <span>Резиновая</span>
-                </label>
+                <input id="rubber" type="radio" name="typegrid" value="rubber">
+                <label class="radio" for="rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-features">
             <legend>Особенности:</legend>
             <ul>
               <li>
-                <label>
-                  <input type="checkbox" name="qualities" value="slider">
-                  <span>Слайдер</span>
-                </label>
+                <input id="slider" type="checkbox" name="qualities" value="slider">
+                <label class="feature-checkbox" for="slider">Слайдер</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="qualities" value="benefitsunit">
-                  <span>Блок преимуществ</span>
-                </label>
+                <input id="benefitsunit" type="checkbox" name="qualities" value="benefitsunit">
+                <label class="feature-checkbox" for="benefitsunit">Блок преимуществ</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="qualities" value="news">
-                  <span>Новости</span>
-                </label>
+                <input id="news" type="checkbox" name="qualities" value="news">
+                <label class="feature-checkbox" for="news">Новости</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="qualities" value="gallery">
-                  <span>Галерея</span>
-                </label>
+                <input id="gallery" type="checkbox" name="qualities" value="gallery">
+                <label class="feature-checkbox" for="gallery">Галерея</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="qualities" value="basket">
-                  <span>Корзина</span>
-                </label>
+                <input id="basket" type="checkbox" name="qualities" value="basket">
+                <label class="feature-checkbox" for="basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
+          <button class="btn btn-default btn-show" type="submit" name="button">Показать</button>
         </form>
         <section class="goods">
           <header>
@@ -114,12 +101,12 @@
               Сортировать:
             </div>
             <div class="sort">
-              <a href="" class="active">По цене</a>
-              <a href="">По типу</a>
-              <a href="">По названию</a>
+              <a class="active">По цене</a>
+              <a href="?type=1">По типу</a>
+              <a href="?name=1">По названию</a>
               <div class="sort-direction">
-                <a href="" class="active">&#9660</a>
-                <a href="">&#9650</a>
+                <a class="active">&#9660</a>
+                <a href="?direction=1">&#9650</a>
               </div>
             </div>
           </header>
@@ -262,7 +249,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-content">
+    <div class="modal-content catalog-form">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <h2 class="modal-content-title">Напишите нам</h2>
       <form action="" method="post">
