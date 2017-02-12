@@ -39,6 +39,7 @@ body {
   margin: 58px auto;
   margin-bottom: 108px;
   font-size: 55px;
+  font-weight: 500;
   line-height: 55px;
 }
 
@@ -449,8 +450,8 @@ body {
 .feedback header {
   margin-bottom: 30px;
   color: black;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .feedback a {
@@ -606,6 +607,10 @@ body {
   height: 4px;
   border-radius: 50%;
   border: 2px solid #b8b8b8;
+}
+
+@keyframes test {
+  to {transform: translateX();}
 }
 
 .modal-content {
@@ -849,18 +854,15 @@ body {
 }
 
 .price-controls label {
+  display: inline-block;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
-}
-
-.price-controls label {
-  font-style: 16px;
-  display: inline-block;
-  width: 50%;
+  width: 49%;
 }
 
 .max-price {
+  padding-left: 2px;
   text-align: right;
 }
 
@@ -896,6 +898,10 @@ body {
   display: flex;
   width: 41px;
   justify-content: space-between;
+}
+
+.sort-direction a {
+  font-size: 10px;
 }
 
 .sort a {
@@ -1051,8 +1057,10 @@ body {
 
 .btn-show {
   width: 99%;
-  padding: 17px 60px 14px 62px;
+  padding: 17px 30px 14px 30px;
   border: 0;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .btn-page {
