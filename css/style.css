@@ -691,6 +691,7 @@ body {
   font-size: 0;
   background-color: white;
   border: 0;
+  outline: transparent;
   cursor: pointer;
 }
 
@@ -741,10 +742,6 @@ body {
 
 .modal-content-close:active::before, .modal-content-close:active::after {
   opacity: 0.1;
-}
-
-.modal-content-close {
-  outline: transparent;
 }
 
 .modal-content-close::before {
