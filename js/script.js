@@ -7,7 +7,7 @@
       sliders[i].classList.remove('visible');
     }
     sliders[value - 1].classList.add('visible');
-  }
+  };
   if (switchers.length > 0) {
     for (var i = 0; i < switchers.length; i++) {
       switchers[i].addEventListener('click', changeSlide);
@@ -29,7 +29,7 @@
     overlay.classList.remove("visible");
     from.classList.remove("show-modal");
   };
-  feedback.addEventListener("click", doShow)
+  feedback.addEventListener("click", doShow);
   closeBtn.addEventListener("click", doClose);
   overlay.addEventListener("click", doClose);
 })();

@@ -663,20 +663,6 @@ body {
   border: 2px solid #b8b8b8;
 }
 
-@-webkit-keyframes test {
-  to {
-    -webkit-transform: translateX();
-    transform: translateX();
-  }
-}
-
-@keyframes test {
-  to {
-    -webkit-transform: translateX();
-    transform: translateX();
-  }
-}
-
 .modal-content {
   display: none;
   position: absolute;
@@ -863,7 +849,7 @@ body {
 
 .spacing {
   font-weight: 500;
-  letter-spacing: 1.1px;
+  letter-spacing: .1em;
   margin-left: -3px;
 }
 
@@ -897,7 +883,7 @@ body {
 .range-controls .toggle {
   position: absolute;
   top: 30px;
-  left: 0px;
+  left: 0;
   width: 4px;
   height: 4px;
   cursor: pointer;
@@ -1335,7 +1321,7 @@ body {
   transform: rotate(-45deg);
   border-top: 0;
   border-right: 0;
-  box-shadow: 1px 1px 0 #ffffff, 0px -1px 0 #ffffff inset;
+  box-shadow: 1px 1px 0 #ffffff, 0 -1px 0 #ffffff inset;
 }
 
 .filter-features label:hover {
