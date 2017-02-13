@@ -168,7 +168,7 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 1px;
   color: white;
 }
 
@@ -177,7 +177,7 @@ body {
 }
 
 .btn-know {
-  padding: 15px 54px 15px 53px;
+  padding: 16px 54px 15px 55px;
 }
 
 .btn-error {
@@ -242,7 +242,7 @@ body {
 }
 
 .btn-order {
-  padding: 17px 39px 15px 40px;
+  padding: 17px 39px 15px 41px;
 }
 
 .btn-send {
@@ -652,7 +652,7 @@ body {
   border-radius: 50%;
 }
 
-.radio-custom-label input[type='radio']:checked~span::after {
+.radio-custom-label input[type='radio']:checked ~ span::after {
   content: '';
   position: absolute;
   top: 5px;
