@@ -846,7 +846,7 @@ body {
 
 .spacing {
   font-weight: 500;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin-left: -3px;
 }
 
@@ -1177,6 +1177,7 @@ body {
 .filter-grid li, .filter-features li {
   padding-top: 11px;
   padding-bottom: 11px;
+  list-style: none;
 }
 
 
@@ -1184,6 +1185,7 @@ body {
 */
 
 .filter-grid label {
+  padding-left: 36px;
   cursor: pointer;
   color: #283136;
 }
@@ -1194,37 +1196,6 @@ body {
 
 .filter-grid input[type="radio"] {
   display: none;
-}
-
-.filter-grid label {
-  padding-left: 36px;
-}
-
-.radio::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: 1px;
-  width: 16px;
-  height: 16px;
-  background: #ffffff;
-  border-radius: 50%;
-  border: 4px solid #b8b8b8;
-}
-
-.filter-grid input[type="radio"]:checked+label::after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  background-color: #b8b8b8;
-  border-radius: 50%;
-}
-
-.filter-grid li, .filter-features li {
-  list-style: none;
 }
 
 .radio::before {
