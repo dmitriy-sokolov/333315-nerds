@@ -130,7 +130,7 @@ body {
   left: -10px;
   width: 18px;
   height: 18px;
-  background: transparent url("../img/sprites.png") no-repeat;
+  background: transparent url('../img/sprites.png') no-repeat;
   background-position: -5px -66px;
   opacity: 0.3;
 }
@@ -275,15 +275,15 @@ body {
 }
 
 .sliders .slider:first-child {
-  background-image: url(../img/slide1.png);
+  background-image: url('../img/slide1.png');
 }
 
 .sliders .slider:nth-child(2) {
-  background-image: url(../img/slide2.png);
+  background-image: url('../img/slide2.png');
 }
 
 .sliders .slider:nth-child(3) {
-  background-image: url(../img/slide3.png);
+  background-image: url('../img/slide3.png');
 }
 
 .sliders .switch {
@@ -543,7 +543,7 @@ body {
   top: 28px;
   width: 26px;
   height: 22px;
-  background: transparent url("../img/sprites.png") no-repeat;
+  background: transparent url('../img/sprites.png') no-repeat;
 }
 
 .social:active::after {
@@ -1062,32 +1062,32 @@ body {
 }
 
 .layout-sedona {
-  background-image: url(../img/item1.jpg);
+  background-image: url('../img/item1.jpg');
   background-repeat: no-repeat;
 }
 
 .layout-pink-app {
-  background-image: url(../img/item2.jpg);
+  background-image: url('../img/item2.jpg');
   background-repeat: no-repeat;
 }
 
 .layout-barbershop {
-  background-image: url(../img/item3.jpg);
+  background-image: url('../img/item3.jpg');
   background-repeat: no-repeat;
 }
 
 .layout-mishka {
-  background-image: url(../img/item4.jpg);
+  background-image: url('../img/item4.jpg');
   background-repeat: no-repeat;
 }
 
 .layout-a-plus {
-  background-image: url(../img/item5.jpg);
+  background-image: url('../img/item5.jpg');
   background-repeat: no-repeat;
 }
 
 .layout-kvast {
-  background-image: url(../img/item6.jpg);
+  background-image: url('../img/item6.jpg');
   background-repeat: no-repeat;
 }
 
